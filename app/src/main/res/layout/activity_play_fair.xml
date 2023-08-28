@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="40dp"
+    tools:context=".PlayFairActivity">
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results Appear Here"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="25dp">
+
+        <Button
+            android:id="@+id/copy_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_baseline_content_copy"/>
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_baseline_refresh"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:id="@+id/plainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:hint="Enter Plaintext" />
+        <Button
+            android:id="@+id/paste_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-50dp"
+            android:paddingLeft="13dp"
+            android:drawableLeft="@drawable/ic_baseline_content_paste"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/keyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Enter Key (Text)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:id="@+id/cipherText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:hint="Enter Ciphertext" />
+
+        <Button
+            android:id="@+id/paste_btn2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-50dp"
+            android:paddingLeft="13dp"
+            android:drawableLeft="@drawable/ic_baseline_content_paste"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/encrypt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encrypt"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/decrypt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Decrypt"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>
